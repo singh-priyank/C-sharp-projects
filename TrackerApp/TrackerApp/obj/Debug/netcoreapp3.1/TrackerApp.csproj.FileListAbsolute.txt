@@ -1,0 +1,14 @@
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\bin\Debug\netcoreapp3.1\TrackerApp.exe
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\bin\Debug\netcoreapp3.1\TrackerApp.deps.json
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\bin\Debug\netcoreapp3.1\TrackerApp.runtimeconfig.json
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\bin\Debug\netcoreapp3.1\TrackerApp.runtimeconfig.dev.json
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\bin\Debug\netcoreapp3.1\TrackerApp.dll
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\bin\Debug\netcoreapp3.1\TrackerApp.pdb
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.csproj.AssemblyReference.cache
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.AssemblyInfoInputs.cache
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.AssemblyInfo.cs
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.csproj.CoreCompileInputs.cache
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.dll
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.pdb
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\TrackerApp\obj\Debug\netcoreapp3.1\TrackerApp.genruntimeconfig.cache
