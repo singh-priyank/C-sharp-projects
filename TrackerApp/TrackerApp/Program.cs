@@ -4,47 +4,49 @@ using System.Diagnostics;
 using System.Threading;
 using System.Timers;
 using System.Threading.Tasks;
+using System.IO;
+using static TrackerApp.Utilities;
 
 namespace TrackerApp
 {
     class Program
     {
         public static Dictionary<string, Tuple<long, int>> applicationUsage = new Dictionary<string, Tuple<long, int>>();
-        static async Task Main(string[] args)
+        
+        static void Main(string[] args)
         {
             Collector collector = new Collector();
-            Console.WriteLine("Hello World!");
-            var activeProcessOld = collector.GetProcessIdAndName();
-
-            DateTime now = DateTime.Now;
-            long unixTimeMilliseconds = new DateTimeOffset(now).ToUnixTimeMilliseconds();
-            applicationUsage[activeProcessOld.ProcessName] = Tuple.Create(unixTimeMilliseconds, 0);
+            var activeProcessOld = collector.GetCurrentProcess();
+            applicationUsage[activeProcessOld.ProcessName] = Tuple.Create(timeNowMilliseconds(), 0);
 
             System.Timers.Timer myTimer = new System.Timers.Timer();
-            myTimer.Elapsed += new ElapsedEventHandler(printData);
-            myTimer.Interval = 3 * 1000;
+            myTimer.Elapsed += new ElapsedEventHandler(printDataToFile);
+            myTimer.Interval = 5 * 1000;
             myTimer.Enabled = true;
 
             while (true)
             {
-                var activeProcessNew = collector.GetProcessIdAndName();
+                var activeProcessNew = collector.GetCurrentProcess();
                 if(activeProcessNew.Id != activeProcessOld.Id)
                 {
                     applicationUsage = collector.UpdateApplicationUsage(activeProcessOld, activeProcessNew, applicationUsage);
                     activeProcessOld = activeProcessNew;
                 }
-                // if (applicationUsage.Count > 3) break;
-
             }
-            
         }
 
-        private static void printData(object state, ElapsedEventArgs e)
+        private static void printDataToFile(object state, ElapsedEventArgs e)
         {
-            foreach (var application in applicationUsage)
+            string fullPath = "C:\\Users\\PriyankSingh\\C-sharp-projects\\TrackerApp\\output.txt";
+
+            using (StreamWriter writer = new StreamWriter(fullPath))
             {
-                var ms = application.Value.Item2;
-                Console.WriteLine(application.Key + " " + TimeSpan.FromMilliseconds(ms).ToString());
+                foreach (var application in applicationUsage)
+                {
+                    var usageTime = application.Value.Item2;
+
+                    writer.WriteLine(application.Key + " " + TimeSpan.FromMilliseconds(usageTime).ToString());
+                }
             }
         }
     }

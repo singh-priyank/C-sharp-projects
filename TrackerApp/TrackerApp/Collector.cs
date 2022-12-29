@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
+using static TrackerApp.Utilities;
 
 namespace TrackerApp
 {
@@ -19,35 +20,30 @@ namespace TrackerApp
             var processNameOld = processOld.ProcessName;
             var processNameNew = processNew.ProcessName;
 
-            DateTime now = DateTime.Now;
-            long unixTimeMilliseconds = new DateTimeOffset(now).ToUnixTimeMilliseconds();
+
+            long timeNow = timeNowMilliseconds();
 
             // Add new process to the dictonary 
             if (!applicationUsage.ContainsKey(processNameNew))
             {
-                applicationUsage[processNameNew] = Tuple.Create(unixTimeMilliseconds, 0);
+                applicationUsage[processNameNew] = Tuple.Create(timeNow, 0);
             }
             else
             {
-                applicationUsage[processNameNew] = Tuple.Create(unixTimeMilliseconds, applicationUsage[processNameNew].Item2);
+                applicationUsage[processNameNew] = Tuple.Create(timeNow, applicationUsage[processNameNew].Item2);
             }
             // Update the old process usage time 
-            int usedTime = applicationUsage[processNameOld].Item2 + (int)(unixTimeMilliseconds - applicationUsage[processNameOld].Item1);
-            applicationUsage[processNameOld] = Tuple.Create(unixTimeMilliseconds, usedTime);
+            int usedTime = applicationUsage[processNameOld].Item2 + (int)(timeNow - applicationUsage[processNameOld].Item1);
+            applicationUsage[processNameOld] = Tuple.Create(timeNow, usedTime);
 
             return applicationUsage;
         }
 
-        public Process GetProcessIdAndName()
+        public Process GetCurrentProcess()
         {
             int focusedProcessId;
             GetWindowThreadProcessId(GetForegroundWindow(), out focusedProcessId);
-            var currentProcess = Process.GetProcessById(focusedProcessId);
-            var focusedProcessName = currentProcess.MainWindowTitle;
-
-            // Console.WriteLine(currentProcess.ProcessName);
-
-            return currentProcess;
+            return Process.GetProcessById(focusedProcessId);
         }
     }
 }
