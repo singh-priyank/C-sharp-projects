@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerApp", "TrackerApp\TrackerApp.csproj", "{8D8DFE4B-FFB9-43FF-8EB2-008D549E8B43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackerApp", "TrackerApp\TrackerApp.csproj", "{8D8DFE4B-FFB9-43FF-8EB2-008D549E8B43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReminderApp", "ReminderApp\ReminderApp.csproj", "{0DEE5B41-8C06-4780-B070-66E2F032716A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8D8DFE4B-FFB9-43FF-8EB2-008D549E8B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D8DFE4B-FFB9-43FF-8EB2-008D549E8B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D8DFE4B-FFB9-43FF-8EB2-008D549E8B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

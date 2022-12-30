@@ -1,0 +1,10 @@
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\bin\Debug\netcoreapp3.1\ReminderApp.deps.json
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\bin\Debug\netcoreapp3.1\ReminderApp.dll
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\bin\Debug\netcoreapp3.1\ReminderApp.pdb
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.csproj.AssemblyReference.cache
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.AssemblyInfoInputs.cache
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.AssemblyInfo.cs
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.csproj.CoreCompileInputs.cache
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.dll
+C:\Users\PriyankSingh\C-sharp-projects\TrackerApp\ReminderApp\obj\Debug\netcoreapp3.1\ReminderApp.pdb
