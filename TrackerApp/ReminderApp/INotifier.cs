@@ -6,6 +6,6 @@ namespace ReminderApp
 {
     public interface INotifier
     {
-        bool ShowNotification();
+        void ShowNotification();
     }
 }

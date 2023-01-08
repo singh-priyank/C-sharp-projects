@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackerApp", "TrackerApp\TrackerApp.csproj", "{8D8DFE4B-FFB9-43FF-8EB2-008D549E8B43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReminderApp", "ReminderApp\ReminderApp.csproj", "{0DEE5B41-8C06-4780-B070-66E2F032716A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReminderApp", "ReminderApp\ReminderApp.csproj", "{0DEE5B41-8C06-4780-B070-66E2F032716A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerUI", "TrackerUI\TrackerUI.csproj", "{BB39EDAA-4C35-4ACE-87C2-35FEA59208A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DEE5B41-8C06-4780-B070-66E2F032716A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB39EDAA-4C35-4ACE-87C2-35FEA59208A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB39EDAA-4C35-4ACE-87C2-35FEA59208A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB39EDAA-4C35-4ACE-87C2-35FEA59208A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB39EDAA-4C35-4ACE-87C2-35FEA59208A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

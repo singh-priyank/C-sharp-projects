@@ -1,27 +1,31 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using Windows.UI.Notifications;
 
 namespace ReminderApp
 {
     public class ToasterNotification : INotifier
     {
-        public bool ShowNotification()
+        public void ShowNotification()
         {
-            var notification = new ToastContentBuilder();
-            notification.AddArgument("action", "viewConversation");
-            notification.AddArgument("conversationId", 9813);
-            notification.AddText("Andrew sent you a picture");
-            notification.AddText("Check this out, The Enchantments in Washington!");
-            notification.Show();
-            return true;
-        }
-/*
-        static void Main(string[] args)
-        {
+            Message message = new Message();
             
-        }*/
+            while (true)
+            {
+                var notification = new ToastContentBuilder();
+                notification.AddArgument("action", "viewConversation");
+                notification.AddArgument("conversationId", 9813);
+                notification.AddText("Hey!!! Its time to take a break");
+                notification.AddText(message.GetMessage());
+                notification.Show();
+
+                Thread.Sleep(10*1000);
+                //if (notification != null) Marshal.Release(notification);
+            }
+        }
     }
 }

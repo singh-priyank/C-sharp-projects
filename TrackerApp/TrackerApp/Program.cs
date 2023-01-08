@@ -19,9 +19,11 @@ namespace TrackerApp
         
         static void Main(string[] args)
         {
+            using (FileStream fs = File.Create(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\messages.txt")) ;
             Collector collector = new Collector();
             ToasterNotification toasterNotifications = new ToasterNotification();
-            toasterNotifications.ShowNotification();
+            Task.Run(() => toasterNotifications.ShowNotification());
+            
             var activeProcessOld = collector.GetCurrentProcess();
             applicationUsage[activeProcessOld.ProcessName] = Tuple.Create(timeNowMilliseconds(), 0);
 
@@ -45,6 +47,7 @@ namespace TrackerApp
         private static void printDataToFile(object state, ElapsedEventArgs e)
         {
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\usage.txt";
+            
             using (StreamWriter writer = new StreamWriter(desktopPath))
             {
                 foreach (var application in applicationUsage)
