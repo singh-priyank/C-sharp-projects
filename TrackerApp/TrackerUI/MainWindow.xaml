@@ -7,6 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="1" Text="Applications Usage Time" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="2" Text="Application1" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="3" Text="Application2" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="4" Text="Application3" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="5" Text="Application4" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="6" Text="Application5" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="5" Grid.Row="2" Text="time" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="5" Grid.Row="3" Text="time" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="5" Grid.Row="4" Text="time" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="5" Grid.Row="5" Text="time" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="5" Grid.Row="6" Text="time" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
+        <TextBlock Grid.Column="6" Grid.Row="1" Margin="300,5,0,5"  Text="Enable Remider Notification" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <RadioButton Content="Yes" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="2" VerticalAlignment="Center"/>
+        <RadioButton Content="No" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="3" VerticalAlignment="Center"/>
+        <Button Content="Add reminder quote" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="6" VerticalAlignment="Top"/>
     </Grid>
 </Window>
