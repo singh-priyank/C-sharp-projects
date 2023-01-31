@@ -40,8 +40,9 @@
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="5" Grid.Row="6" Text="time" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
         <TextBlock Grid.Column="6" Grid.Row="1" Margin="300,5,0,5"  Text="Enable Remider Notification" Grid.ColumnSpan="2" FontWeight="Bold"/>
-        <RadioButton Content="Yes" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="2" VerticalAlignment="Center"/>
-        <RadioButton Content="No" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="3" VerticalAlignment="Center"/>
-        <Button Content="Add reminder quote" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="6" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Yes_Button" Content="Yes" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="2" VerticalAlignment="Center" />
+        <RadioButton x:Name="No_Button" Content="No" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="3" VerticalAlignment="Center" />
+        <Button Grid.Column="6" Grid.Row="4" Margin="300,5,200,5" Content="Update Status" Click="Update_Notification_Click"/>
+        <Button x:Name="Add_quotes" Content="Add reminder quote" Grid.Column="6" HorizontalAlignment="Left" Margin="300,5,0,5" Grid.Row="6" VerticalAlignment="Top" Click="Add_quotes_Click"/>
     </Grid>
 </Window>
